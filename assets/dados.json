@@ -52,12 +52,12 @@
       "Rafoli"
     ],
     "gratuito": false,
-    "emPromocao": true,
-    "desconto": 15,
+    "emPromocao": false,
+    "desconto": 0,
     "precoOriginal": 24.99,
-    "precoAtual": 21.24,
+    "precoAtual": 24.99,
     "moeda": "BRL",
-    "precoFormatado": "R$ 21,24",
+    "precoFormatado": "R$ 24,99",
     "url": "https://store.steampowered.com/app/4312190/"
   },
   "Ultimate Chicken Horse": {
