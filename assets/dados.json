@@ -23,7 +23,7 @@
     "id": 602960,
     "nome": "Barotrauma",
     "descricao": "Barotrauma é um simulador cooperativo em 2D de terror, sobrevivência e RPG, no espaço. Controle seu submarino, conclua missões. encare monstros, conserte vazamentos, opere o maquinário, cuide da tripulação e fabrique itens. Cuidado: o perigo é imprevisível em Barotrauma!",
-    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/header.jpg?t=1791473680",
+    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/header.jpg?t=1793897290",
     "desenvolvedores": [
       "FakeFish",
       "Undertow Games"
@@ -44,7 +44,7 @@
     "id": 4312190,
     "nome": "Crack",
     "descricao": "Por que há um ovo gigante neste laboratório? Seu trabalho é simples: quebrá-lo até abrir. Não faça perguntas. CRACK é uma aventura cooperativa e incremental para 1 a 4 jogadores sobre descobrir o que há dentro de um misterioso ovo gigante.",
-    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4312190/ad776d331a537d2f081324a733232683bec4b815/header_alt_assets_0_brazilian.jpg?t=1793285498",
+    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4312190/ad776d331a537d2f081324a733232683bec4b815/header_alt_assets_0_brazilian.jpg?t=1793567520",
     "desenvolvedores": [
       "Rafoli"
     ],
@@ -52,12 +52,12 @@
       "Rafoli"
     ],
     "gratuito": false,
-    "emPromocao": true,
-    "desconto": 15,
+    "emPromocao": false,
+    "desconto": 0,
     "precoOriginal": 24.99,
-    "precoAtual": 21.24,
+    "precoAtual": 24.99,
     "moeda": "BRL",
-    "precoFormatado": "R$ 21,24",
+    "precoFormatado": "R$ 24,99",
     "url": "https://store.steampowered.com/app/4312190/"
   },
   "Ultimate Chicken Horse": {
@@ -148,7 +148,7 @@
     "id": 4656000,
     "nome": "Bombanana",
     "descricao": "Desarme de bomba caótico e divertido, com amigos macacos! Em trio, cooperem assumindo o papel do macaco cego, surdo ou mudo. Cada jogador tem parte das informações; juntos, vocês devem descobrir o que fazer. Comuniquem-se, resolvam desafios e corram contra o tempo. Desarme a tempo ou voe pelos ares!",
-    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4656000/d26ac7a7fb6e1bcc2a89cbbaefcb359dfd5d1eeb/header_alt_assets_0.jpg?t=1792877964",
+    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4656000/99c086faba625a8d3bc459bab444087d257ccbe1/header.jpg?t=1792877964",
     "desenvolvedores": [
       "Lefto Studio"
     ],
