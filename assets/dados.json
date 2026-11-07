@@ -183,5 +183,45 @@
     "moeda": "BRL",
     "precoFormatado": "R$ 19,49",
     "url": "https://store.steampowered.com/app/3241660/"
+  },
+  "Night Club Simulator": {
+    "id": 2943670,
+    "nome": "Night Club Simulator",
+    "descricao": "Compre um local abandonado e degradado e transforme-o na melhor boate do país. Renove, atualize e expanda o espaço enquanto lida com clientes problemáticos. Trabalhe junto com seus amigos para alcançar o auge da vida noturna!",
+    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2943670/header.jpg?t=1761136371",
+    "desenvolvedores": [
+      "Clock Wizard Games"
+    ],
+    "publicadoras": [
+      "Clock Wizard Games"
+    ],
+    "gratuito": false,
+    "emPromocao": false,
+    "desconto": 0,
+    "precoOriginal": 46.99,
+    "precoAtual": 46.99,
+    "moeda": "BRL",
+    "precoFormatado": "R$ 46,99",
+    "url": "https://store.steampowered.com/app/2943670/"
+  },
+  "We Clean Rivers": {
+    "id": 5509830,
+    "nome": "We Clean Rivers",
+    "descricao": "Clean up polluted waters, recycle trash, and sell it for profit! Play solo or with friends, upgrade your tools, expand your production lines at your base, and turn waste into a profitable business. Do whatever it takes to protect nature. At any cost.",
+    "imagem": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5509830/3162af9abe6feaa652c8e29c71c55dbe76169c07/header.jpg?t=1793975549",
+    "desenvolvedores": [
+      "Tooman"
+    ],
+    "publicadoras": [
+      "Tooman"
+    ],
+    "gratuito": false,
+    "emPromocao": false,
+    "desconto": 0,
+    "precoOriginal": null,
+    "precoAtual": null,
+    "moeda": null,
+    "precoFormatado": null,
+    "url": "https://store.steampowered.com/app/5509830/"
   }
 }
