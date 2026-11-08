@@ -4,6 +4,14 @@
  * imagens e preços, verificando descontos automaticamente.
  */
 
+// Ordena os cards de acordo com o critério do usuário, o padrão é ordem alfabética
+function ordenarCards(desordenado) {
+
+  const ordenado = Object.fromEntries(Object.entries(desordenado).sort(([a,],[b,]) => a.localeCompare(b)));
+  return ordenado
+
+}
+
 // Formata os preços para a moeda brasileira.
 function formatarPreco(valor, moeda = "BRL") {
   if (valor == null) return "Preço indisponível";
@@ -95,12 +103,25 @@ async function carregarJogos(caminho = "./assets/dados.json") {
     throw new Error(`Erro ao carregar dados: ${resposta.status}`);
   }
 
-  const jogos = await resposta.json();
+  const jogos = ordenarCards(await resposta.json());
 
   container.replaceChildren();
   Object.values(jogos).forEach((jogo) => renderizarJogo(jogo, container));
 }
 
+function controleMenu() {
+  const botao = document.getElementsByName("principal");
+  const menu = document.getElementById("popover");
+
+  botao.addEventListener("click", () => {
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+}
+
 // Executa o carregamento
 carregarJogos();
-
+controleMenu();

@@ -1,5 +1,26 @@
 body{
-  background-color: #000000;
+  background-color: #0F1924;
+}
+
+#controles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtro {
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #1a9fff;
+  background-color: #3d4450;
+}
+
+#popover {
+  display: none;
 }
 
 #jogos {
@@ -16,9 +37,9 @@ body{
   width: 100%;
   max-width: 320px;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 15px;
   border-radius: 10px;
-  background: #1b2838;
+  background: #1B354B;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0 auto;
@@ -50,4 +71,12 @@ body{
 
 .steam-game-card a {
   color: #66c0f4;
+}
+
+span {
+  color: #ffffff;
+}
+
+svg {
+  color: #ffffff;
 }
