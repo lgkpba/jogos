@@ -3,24 +3,54 @@ body{
 }
 
 #controles {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordenacao {
+    position: relative;
+    display: inline-block;
 }
 
 .filtro {
-  border: 0px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  color: #1a9fff;
-  background-color: #3d4450;
+    border: none;
+    padding: 10px 8px 8px;
+    color: #1a9fff;
+    background-color: #3d4450;
+    cursor: pointer;
+}
+
+#controles > .filtro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 #popover {
-  display: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #3d4450;
+}
+
+#popover.aberto {
+    display: flex;
+}
+
+#popover .filtro {
+    text-align: left;
+    width: 100%;
+}
+
+#popover .filtro:hover {
+    background-color: #505967;
 }
 
 #jogos {

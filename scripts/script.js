@@ -4,12 +4,29 @@
  * imagens e preços, verificando descontos automaticamente.
  */
 
+let chave = "Nome";
+
 // Ordena os cards de acordo com o critério do usuário, o padrão é ordem alfabética
 function ordenarCards(desordenado) {
 
-  const ordenado = Object.fromEntries(Object.entries(desordenado).sort(([a,],[b,]) => a.localeCompare(b)));
-  return ordenado
+  if (chave === "Nome"){
+    const ordenado = Object.fromEntries(Object.entries(desordenado).sort(([a,],[b,]) => a.localeCompare(b)));
+    return ordenado;
+  }
 
+  else if (chave === "Preço"){
+    const ordenado = Object.fromEntries(Object.entries(desordenado).sort(([,a],[,b]) => a.precoAtual - b.precoAtual));
+    return ordenado;
+  }
+
+  else if (chave === "Desconto"){
+    const ordenado = Object.fromEntries(Object.entries(desordenado).sort(([,a],[,b]) => {
+      const diferenca = b.desconto - a.desconto;
+      if (diferenca !== 0) return diferenca;
+      return a.nome.localeCompare(b.nome);
+    }));
+    return ordenado;
+  }
 }
 
 // Formata os preços para a moeda brasileira.
@@ -109,15 +126,35 @@ async function carregarJogos(caminho = "./assets/dados.json") {
   Object.values(jogos).forEach((jogo) => renderizarJogo(jogo, container));
 }
 
+//contorla o funcionamento do botão de ordenação
 function controleMenu() {
-  const botao = document.getElementsByName("principal");
-  const menu = document.getElementById("popover");
+  const botao = document.querySelector('[name="principal"]');
+  const popover = document.querySelector('#popover');
+  const opcoes = document.querySelectorAll('#popover .filtro');
+  const texto = botao.querySelector('span');
 
-  botao.addEventListener("click", () => {
-    if (menu.style.display === "none") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
+  botao.addEventListener('click', () => {
+    const aberto = popover.classList.toggle('aberto');
+
+    botao.setAttribute('aria-expanded', aberto);
+  });
+
+  opcoes.forEach(opcao => {
+    opcao.addEventListener('click', () => {
+        texto.textContent = opcao.textContent;
+
+        popover.classList.remove('aberto');
+        botao.setAttribute('aria-expanded', 'false');
+        
+        chave = opcao.textContent;
+        carregarJogos();
+    });
+  });
+
+  document.addEventListener('click', (evento) => {
+    if (!evento.target.closest('#controles')) {
+        popover.classList.remove('aberto');
+        botao.setAttribute('aria-expanded', 'false');
     }
   });
 }
