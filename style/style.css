@@ -1,5 +1,56 @@
 body{
-  background-color: #000000;
+  background-color: #0F1924;
+}
+
+#controles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordenacao {
+    position: relative;
+    display: inline-block;
+}
+
+.filtro {
+    border: none;
+    padding: 10px 8px 8px;
+    color: #1a9fff;
+    background-color: #3d4450;
+    cursor: pointer;
+}
+
+#controles > .filtro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#popover {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #3d4450;
+}
+
+#popover.aberto {
+    display: flex;
+}
+
+#popover .filtro {
+    text-align: left;
+    width: 100%;
+}
+
+#popover .filtro:hover {
+    background-color: #505967;
 }
 
 #jogos {
@@ -16,9 +67,9 @@ body{
   width: 100%;
   max-width: 320px;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 15px;
   border-radius: 10px;
-  background: #1b2838;
+  background: #1B354B;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0 auto;
@@ -50,4 +101,12 @@ body{
 
 .steam-game-card a {
   color: #66c0f4;
+}
+
+span {
+  color: #ffffff;
+}
+
+svg {
+  color: #ffffff;
 }
